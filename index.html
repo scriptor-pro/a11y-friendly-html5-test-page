@@ -1,17 +1,50 @@
-﻿<!doctype html>
-<html lang="en">
+<!doctype html>
+<html lang="fr-BE">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5 Test Page</title>
-  </head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Chalarangelo/mini.css@v3.0.1/dist/mini-default.min.css">
+  
+<style>
+  a:focus,
+  input:focus,
+  button:focus,
+  select:focus,
+  textarea:focus {
+    outline: 3px solid #ffbf47;
+    outline-offset: 2px;
+  }
+
+  *:focus {
+    scroll-margin-top: 2rem;
+  }
+
+  .bgimage-deco[aria-hidden="true"] {
+    display: block;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>
+
+</head>
   <body>
     <div id="top" role="document">
       <header>
         <h1>HTML5 Test Page</h1>
         <p>This is a test page filled with common HTML elements to be used to provide visual feedback whilst building CSS systems and frameworks.</p>
       </header>
-      <nav>
+      <nav role=\"navigation\">
         <ul>
           <li>
             <a href="#text">Text</a>
@@ -324,20 +357,20 @@
             <header><h2>Images</h2></header>
             <div>
               <h3>Plain <code>&lt;img&gt;</code> element</h3>
-              <p><img src="https://placekitten.com/480/480" alt="Photo of a kitten"></p>
+              <p><img src="https://picsum.photos/480" alt="random photo"></p>
               <h3><code>&lt;figure&gt;</code> element with <code>&lt;img&gt;</code> element</h3>
-              <figure><img src="https://placekitten.com/420/420" alt="Photo of a kitten"></figure>
+              <figure><img src="https://picsum.photos/420" alt="Photo of a kitten"></figure>
               <h3><code>&lt;figure&gt;</code> element with <code>&lt;img&gt;</code> and <code>&lt;figcaption&gt;</code> elements</h3>
               <figure>
-                <img src="https://placekitten.com/420/420" alt="Photo of a kitten">
+                <img src="https://picsum.photos/420" alt="Photo of a kitten">
                 <figcaption>Here is a caption for this image.</figcaption>
               </figure>
               <h3><code>&lt;figure&gt;</code> element with a <code>&lt;picture&gt;</code> element</h3>
               <figure>
                 <picture>
-                  <source srcset="https://placekitten.com/800/800"
+                  <source srcset="https://picsum.photos/800"
                     media="(min-width: 800px)">
-                  <img src="https://placekitten.com/420/420" alt="Photo of a kitten" />
+                  <img src="https://picsum.photos/420" alt="Photo of a kitten" />
                 </picture>
               </figure>
             </div>
@@ -345,7 +378,7 @@
           </article>
           <article id="embedded__bgimages">
             <header><h2>Background images</h2></header>
-            <div style="background-image:url('https://placekitten.com/300/300'); width:300px; height: 300px;"></div>
+            <div style="background-image:url('https://picsum.photos/300'); width:300px; height: 300px;"></div>
             <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
           <article id="embedded__audio">
